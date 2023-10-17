@@ -1,0 +1,753 @@
+
+
+#header {
+  background-image: url('./imge/landing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  position: relative;
+}
+
+  
+/* navbar style start*/
+#logo-img{
+    height: 2.8rem;
+
+}
+
+/* Style for menu items start */
+
+
+
+.nav-pills .nav-item a {
+    text-decoration: none; /* Remove underlines */
+    color: white !important; /* Set text color to white */
+    margin-right: 20px; 
+  }
+
+/* Style for active menu item */
+.nav-pills .nav-item a.active {
+    font-weight: bold; /* Optional: Make the active item bold */
+  }
+
+  .selected a {
+    color: blue; /* Set the desired color for the selected item */
+    font-weight: bold; /* Optionally make the text bold for emphasis */
+  }
+
+/* Style for menu items end */
+
+
+
+/* search icon style start*/
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Add this line */
+}
+
+.search-icon {
+    font-size: 20px; /* Adjust the size as needed */
+    color: white;    /* Adjust the color as needed */
+    margin-left: 10px; /* Adjust the spacing between the left elements and the search icon */
+    
+}
+
+.search-container::before {
+    content: "";
+    position: absolute;
+    left: -10px; /* Adjust the position of the vertical line */
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Adjust the thickness of the line */
+    background-color: white; /* Adjust the color of the line */
+    margin-left: 10px; /* Adjust the spacing between the line and the search icon */
+}
+
+
+
+/* search icon style end */
+
+/* Styles for the hamburger menu */
+.hamburger-menu ul.nav-pills {
+    display: none;
+  }
+  
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Display the menu items when screen width is 768px or larger */
+@media screen and (min-width: 768px) {
+    .hamburger-menu ul.nav-pills {
+      display: flex;
+      align-items: center ;
+      justify-content: right
+      ;
+    }
+    .hamburger-menu .hamburger-icon {
+      display: none !important;
+    }
+  }
+
+
+/* navbar style end*/
+
+
+/* Carousel style */
+#myCarousel{
+  height: 
+  450px;
+}
+
+/* features style */
+.icon{
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+
+.feature-txt{
+  color: rgb(127, 229, 255)
+  ;
+  
+}
+
+/* features 2 style start */
+#features-2{
+  background-image: url('./imge/design-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28rem;
+ 
+  
+  position: relative;
+
+}
+
+.image-container {
+  position: relative;
+ 
+}
+
+.image-container img {
+
+  margin-bottom: -50%; /* Adjust the negative margin to control how much of the image extends out */
+  overflow: hidden;
+  
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  color: aliceblue;
+}
+
+.custom-list li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./imge/pc-display.svg');
+  background-color: aliceblue;
+  background-size: contain;
+  background-repeat: no-repeat; /* Ensure the icon doesn't repeat */
+  background-position: left center; /* Adjust this as needed */
+  margin-right: 10px;
+}
+
+
+
+.features-2-text {
+  color: aliceblue !important;
+}
+
+
+.backcolor{
+  background-color: rgba(0, 183, 255, 0.3); /* Use rgba to specify transparency (0.3 in this case) */
+  padding: 20px; 
+  height: 250px;
+  width: 700px;
+  padding-right: 0px;
+  margin-right: 0px;
+  position: absolute;
+  left: 43rem;
+  top: 3rem;
+}
+/* features 2 style end  */
+
+
+/* PORTFOLIO CAROUSEL style start */
+#portfolio-carousel {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+}
+
+.portfolio-carousel-div {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 100%; /* Change to 100% to make it full width */
+  width: 100%; /* Change to 100% to make it full width */
+  position: relative; /* Added to create a stacking context */
+  margin: 0; /* Remove margin */
+}
+
+.portfolio-carousel-navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio-carousel-navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.portfolio-carousel-navbar li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.portfolio-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0; /* Remove the gap to eliminate margin between photos */
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative; /* Added to create a stacking context */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Change to 100% to make it full width */
+}
+
+.portfolio-carousel-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, filter 0.3s; /* Add transition for smooth animation */
+  transform-origin: center center;
+  z-index: 1; /* Set a higher z-index for the photos */
+}
+
+.portfolio-carousel-item:hover {
+  transform: rotate(4deg) scale(1.1); /* Scale the photo on hover */
+  filter: brightness(0.8); /* Adjust brightness on hover */
+  z-index: 2; /* Set a higher z-index on hover to go on top */
+}
+
+.portfolio-carousel-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.info {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: absolute;
+  bottom: -30px; /* Initial position to hide the description */
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  transition: bottom 0.3s; /* Add transition for smooth animation */
+  opacity: 0; /* Initially hide the description */
+  z-index: 3; /* Set a higher z-index for the info div */
+}
+
+.portfolio-carousel-item:hover .info {
+  bottom: 0; /* Show the description on hover */
+  opacity: 1; /* Make the description text visible on hover */
+}
+
+.portfolio-carousel-button{
+  margin: 2rem;
+}
+
+.more-button {
+  background-color: rgb(0, 153, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0; /* 90-degree corners */
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  
+}
+
+
+/* PORTFOLIO CAROUSEL style end */
+
+
+/* video style start */
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-description {
+  position: absolute;
+  background-color: rgba(0, 153, 255, 0.5); /* Transparent blue background */
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+.video-description h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 25px; /* Add margin-bottom to create a gap between h2 and p */
+}
+
+.video-description p {
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 25px; /* Add margin-bottom to create a gap between h2 and p */
+}
+
+
+.see-button{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0; /* 90-degree corners */
+  margin-bottom: 25px;
+}
+
+/* video style end */
+
+
+
+#stats{
+  position: relative;
+  padding: 2rem;
+
+ 
+  
+
+}
+#stats::before {
+  content: "";
+  background-image: url('./imge/stats.png');
+  background-size: cover;
+  filter: brightness(0.4); /* Adjust the value to control darkness */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.custome-stats{
+  background-color: rgba(0, 153, 255, 0.5); /* Transparent blue background */
+  
+
+}
+
+.stats-card{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.stats-icon{
+  margin: 2rem;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px; /* Adjust as needed */
+  height: 39px; /* Adjust as needed */
+  background-color: #007bff; /* Background color for the rounded shape */
+  border-radius: 50%; /* Makes it a circle */
+  margin: 0 auto 10px; /* Centered with some margin */
+  background-color:black;
+}
+
+.stats-number{
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+  color: #f0f0f0;
+}
+.stats-p{
+  color: #f0f0f0;
+}
+
+
+
+
+
+
+
+.testimonials {
+  padding: 30px;
+}
+
+.testim-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.testim-photo {
+  width: 80px; /* Adjust the size of the photo */
+  border-radius: 50%; /* Make the photo circular */
+}
+
+.testim-info {
+  font-size: 18px;
+  margin: 15px 0;
+}
+.testim-fotter {
+  font-style: italic;
+}
+
+
+.skills {
+  background-color: #f9f9f9;
+  padding: 30px;
+}
+
+.skill{
+  margin: 2rem;
+}
+
+.skill-name {
+  display: flex;
+}
+
+.progress{
+  border-radius: 0px;
+  height: 25px;
+
+}
+.progress-bar {
+  border-radius: 0px;
+  height: 50px;
+  background-color: rgba(0, 153, 255); /* Blue progress bar */
+}
+
+
+
+
+
+
+#jump1{
+  position: relative;
+  padding: 2rem;
+}
+#jump1::before {
+  content: "";
+  background-image: url("./imge/quote.jpg");
+  background-size: cover;
+  filter: brightness(0.4); /* Adjust the value to control darkness */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+.jump1-txt{
+  font-size: 35px;
+  color: #f0f0f0;
+}
+.jump1-fotter{
+  font-style: italic;
+  color: #f0f0f0;
+
+}
+
+
+
+
+
+/* Add your custom styles here */
+.pricing {
+  padding: 80px 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.card-price {
+  font-size: 36px;
+  color: #007bff;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+}
+
+.card-features li {
+  margin: 10px 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+#jump2{
+  position: relative;
+  padding-top: 5rem;
+  height: 250px;
+}
+#jump2::before {
+  content: "";
+  background-image: url("./imge/subscribe.jpg");
+  background-size: cover;
+  filter: brightness(0.4); /* Adjust the value to control darkness */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+.jump2-txt{
+  font-size: 20px;
+  color: #f0f0f0;
+}
+
+.jump2-container{
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.custom-btn1{
+  border-radius: 0px;
+  background-color: #007bff;
+}
+
+.email-holder{
+  border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+.contact-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+
+}
+
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  
+
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;  
+  
+}
+
+.adress{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:35px;  
+  
+  
+}
+
+
+.form{
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+#footer{
+  position: relative;
+  padding-top: 4rem;
+  height: 350px;
+}
+#footer::before {
+  content: "";
+  background-image: url("./imge/subscribe.jpg");
+  background-size: cover;
+  filter: brightness(0.4); /* Adjust the value to control darkness */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  color: #ccc;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
+/* Start Pricing */
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 1px solid (#007bff);
+  border-bottom: 1px solid (#007bff);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+  font-weight: normal;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo";
+  font-size: 20px;
+  position: relative;
+  right: -15px;
+}
+.pricing .plans .plan ul {
+  border-bottom: 1px solid (#007bff);
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: (#007bff);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.pricing .plans .plan .foot a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  border: 1px solid (#007bff);
+  width: fit-content;
+  margin: 30px auto;
+}
+.pricing .contact-text {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: (#007bff);
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+/* End Pricing */

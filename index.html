@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add the Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css ">
+
+</head>
+
+<body>
+  <section id="header">
+
+    <div id="header-div container">
+      <!-- navbar -->
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-4 pt-5 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img id="logo-img" src="./imge/logo.png">
+          </a>
+
+          <div class="hamburger-menu">
+            <div class="hamburger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav nav-pills">
+              <li class="nav-item "><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Services</a></li>
+              <li class="nav-item"><a href="#">Portfolio</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Pricing</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </header>
+      </div>
+
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1">
+            <div class="custom-indicator"></div>
+          </button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+            aria-current="true">
+            <div class="custom-indicator"></div>
+          </button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="">
+            <div class="custom-indicator"></div>
+          </button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="900px" height="400px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="rgba(12, 108, 158, 0.8)"></rect>
+            </svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Hello World!</h1>
+                <p class="opacity-75">SWe Are Kasper. We Make Art.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="900px" height="400px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="rgba(12, 108, 158, 0.8)"></rect>
+            </svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="900px" height="400px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="rgba(12, 108, 158, 0.8)"></rect>
+            </svg>
+            <div class="carousel-caption text-start">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+  </section>
+
+  <section id="services">
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">SERVICES</h1>
+      <img class="d-block mx-auto mb-4" src="./imge/border.png" alt="" width="150px" height="30px">
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="features">
+    <div class="container  mb-5">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col d-flex flex-row align-items-center gap-2">
+          <div class="feature-icon-small icon">
+            <i class="fas fa-desktop fa-3x "></i>
+          </div>
+          <div>
+            <h4 class="fw-semibold mb-3  feature-txt ">Vorem amet intuitive</h4>
+            <p class="text-body-secondary">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+              blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-row align-items-center gap-2">
+          <div class="feature-icon-small icon">
+            <i class="fas fa-cog fa-3x"></i>
+          </div>
+          <div>
+            <h4 class="fw-semibold mb-3  feature-txt">Vorem amet intuitive</h4>
+            <p class="text-body-secondary">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+              blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-row align-items-center gap-2">
+          <div class="feature-icon-small icon">
+            <i class="fas fa-pencil-ruler fa-3x"></i>
+          </div>
+          <div>
+            <h4 class="fw-semibold mb-3  feature-txt">Vorem amet intuitive</h4>
+            <p class="text-body-secondary">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+              blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-row align-items-center gap-2">
+          <div class="feature-icon-small icon">
+            <i class="fas fa-camera fa-3x"></i>
+          </div>
+          <div>
+            <h4 class="fw-semibold mb-3  feature-txt">Vorem amet intuitive</h4>
+            <p class="text-body-secondary">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+              blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="features-2">
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+        <div class="col-10 col-sm-8 col-lg-6 ">
+          <h3 class=" text-body-emphasis lh-1 mb-3 features-2-text">OUR DESIGN COMES WITH...</h3>
+          <ul class="custom-list">
+            <li>Responsive Design</li>
+            <li>Modern And Clean Design</li>
+            <li>Clean Code</li>
+            <li>Browser Friendly</li>
+          </ul>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="./imge/mobile.png" class="img-fluid" alt="Bootstrap Themes" width="300" height="100"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="backcolor">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="services">
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">PORTFOLIO</h1>
+      <img class="d-block mx-auto mb-4" src="./imge/border.png" alt="" width="150px" height="30px">
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio Carousel</title>
+      <link rel="stylesheet" href="styles.css"> <!-- Make sure to link your CSS file here -->
+  </head>
+  <body>
+      <section id="portfolio-carousel">
+          <div class="portfolio-carousel-div">
+              <div class="portfolio-carousel-navbar">
+                <ul>
+                  <li class="nav-button">All</li>
+                  <li class="nav-button">App</li>
+                  <li class="nav-button">Photo</li>
+                  <li class="nav-button">Web</li>
+                  <li class="nav-button">Print</li>
+              </ul>
+              </div>
+  
+              <div class="portfolio-carousel">
+                  <div class="portfolio-carousel-item">
+                      <img class="portfolio-carousel-img" src="./imge/shuffle-01.jpg">
+                      <div class="info">
+                          <p>Project 1</p>
+                          <p>Description 1</p>
+                      </div>
+                  </div>
+                  <div class="portfolio-carousel-item">
+                      <img class="portfolio-carousel-img" src="./imge/shuffle-02.jpg">
+                      <div class="info">
+                          <p>Project 2</p>
+                          <p>Description 2</p>
+                      </div>
+                  </div>
+                 
+                  <div class="portfolio-carousel-item">
+                    <img class="portfolio-carousel-img" src="./imge/shuffle-03.jpg">
+                    <div class="info">
+                        <p>Project 2</p>
+                        <p>Description 2</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-carousel-item">
+                  <img class="portfolio-carousel-img" src="./imge/shuffle-04.jpg">
+                  <div class="info">
+                      <p>Project 2</p>
+                      <p>Description 2</p>
+                  </div>
+              </div>
+
+              <div class="portfolio-carousel-item">
+                <img class="portfolio-carousel-img" src="./imge/shuffle-05.jpg">
+                <div class="info">
+                    <p>Project 2</p>
+                    <p>Description 2</p>
+                </div>
+            </div>
+
+            <div class="portfolio-carousel-item">
+              <img class="portfolio-carousel-img" src="./imge/shuffle-06.jpg">
+              <div class="info">
+                  <p>Project 2</p>
+                  <p>Description 2</p>
+              </div>
+          </div>
+
+          <div class="portfolio-carousel-item">
+            <img class="portfolio-carousel-img" src="./imge/shuffle-07.jpg">
+            <div class="info">
+                <p>Project 2</p>
+                <p>Description 2</p>
+            </div>
+        </div>
+
+        <div class="portfolio-carousel-item">
+          <img class="portfolio-carousel-img" src="./imge/shuffle-08.jpg">
+          <div class="info">
+              <p>Project 2</p>
+              <p>Description 2</p>
+          </div>
+      </div>
+  
+              </div>
+  
+              <div class="portfolio-carousel-button">
+                <button class="more-button">More</button>
+              </div>
+          </div>
+      </section>
+
+      <section id="video-section">
+        <div class="video-container">
+            <video id="video-player" controls autoplay>
+                <source src="./imge/awesome-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-description">
+                <h2>SUPER AWESOME VIDEO HERE</h2>
+                <p>Its All You Need</p>
+                <button class="see-button">SEE MORE</button>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="aboutUs">
+      <div class="px-4 pt-5 mt-5 text-center">
+        <h1 class="display-4 fw-bold text-body-emphasis">ABOUT US</h1>
+        <img class="d-block mx-auto mb-4" src="./imge/border.png" alt="" width="150px" height="30px">
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="./imge/about.png" class="img-fluid " alt="Example image" width="700" height="800" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+ 
+    <section id="stats" >
+      <div class="container custome-stats">
+        <div class=" row row-cols-1 row-cols-md-4  my-5 py-5 text-center">
+          <div class="col">
+            <div class=" mb-4 rounded-3  stats-card">
+              <div class="card-body">
+                <i class="fas fa-mug-hot stats-icon"></i>
+                  <div class="stats-number">1.236</div>
+                  <p class="stats-p">Coffee Drinks</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class=" mb-4 rounded-3  stats-card">
+              <div class="card-body">
+                <i class="fas fa-mug-hot stats-icon"></i>
+                  <div class="stats-number">1.236</div>
+                  <p class="stats-p" >Coffee Drinks</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class=" mb-4 rounded-3  stats-card">
+              <div class="card-body">
+                <i class="fas fa-mug-hot stats-icon"></i>
+                  <div class="stats-number">1.236</div>
+                  <p class="stats-p" >Coffee Drinks</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class=" mb-4 rounded-3  stats-card">
+              <div class="card-body">
+                <i class="fas fa-mug-hot stats-icon"></i>
+                  <div class="stats-number">1.236</div>
+                  <p class="stats-p" >Coffee Drinks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>       
+    </section>
+
+
+
+    <section id="info">
+      <div class="container custom-info">
+        <div class="row row-cols-1 row-cols-md-2 mt-5 mb-1 py-5 text-center">
+    
+          <div class="col">
+            <div class="mb-4 rounded-3 testimonials">
+              <div class="testim-head">
+                <h2 class="mb-4">TESTIMONIALS</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+              </div>
+    
+              <div class="testim-body">
+                <div class="testim-card">
+                  <img src="./imge/skills-01.jpg" class="testim-photo">
+                  <div class="testim-text">
+                    <p class="testim-info">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    <footer class="testim-fotter">John Doe, CEO</footer>
+                  </div>
+                  
+                </div>
+    
+                <div class="testim-card">
+                  <img src="./imge/skills-02.jpg" class="testim-photo">
+                  <div class="testim-text">
+                    <p class="testim-info">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    <footer class="testim-fotter">John Doe, CEO</footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="mb-4 rounded-3 skills">
+              <div class="skills-head">
+                <h2 class="mb-4">SKILLS</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+              </div>
+    
+              <div class="skills-body">
+                <div class="skill">
+                  <p class="skill-name">ADOBE</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <p class="skill-name">HTML & CSS</p>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%; border-radius: 0;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <p class="skill-name">JAVASCRIPT</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <p class="skill-name">PHP</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jump1">
+      
+        <div class="p-2 text-center">
+          <div class="container pt-4">
+            <p class="jump1-txt">
+             " accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. "
+            </p>
+            <footer class="jump1-fotter">John Doe</footer>
+          </div>
+        </div>
+      
+    </section>
+    
+
+    <div class="pricing">
+      <div class="container">
+        <section id="services">
+
+          <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">Pricing</h1>
+            <img class="d-block mx-auto mb-4" src="./imge/border.png" alt="" width="150px" height="30px">
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                elit, eget tincidunt.</p>
+            </div>
+          </div>
+      
+        </section>
+        <div class="plans">
+          <div class="plan">
+            <div class="head">
+              <h3>Basic</h3>
+              <span>19</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Premium</h3>
+              <span>29</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Pro</h3>
+              <span>39</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Platinum</h3>
+              <span>49</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="contact-text">Contact us if you have special request</p>
+        <a href="#" class="contact-link">Contact Us</a>
+      </div>
+    </div>
+
+    <section id="jump2" class="my-5">
+      <div class="container">
+        <div class="text-center">
+          <div class="container  jump2-container">
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <form class="email">
+                <div class="d-flex flex-column flex-sm-row w-100 ">
+                  <label for="newsletter1" class="visually-hidden">Email
+                    address</label>
+                  <input id="newsletter1" type="text" class="form-control email-holder" placeholder="Your Email address" style="height: 50px";>
+                  <button class="btn btn-danger custom-btn1 email-btn" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+
+            <p class="jump2-txt">
+             " accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. "
+            </p>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <section id="CONTACT_US">
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">CONTACT US</h1>
+      <img class="d-block mx-auto mb-4" src="./imge/border.png" alt="" width="150px" height="30px">
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <div class="container contact-div">
+
+      
+
+      <div class="container forms">
+
+        <form >
+          <div class="form" >
+            <label for="newsletter1" class="visually-hidden name">Email
+              address</label>
+            <input id="newsletter1" type="text" class="form-control email-holder" placeholder="Your name" style="height: 70px";>
+          </div>
+        </form>
+
+        <form >
+          <div class="form">
+            <label for="newsletter1" class="visually-hidden">Email
+              address</label>
+            <input id="newsletter1" type="text" class="form-control email-holder" placeholder="Your Email address" style="height:70px";>
+          </div>
+        </form>
+
+        <form >
+          <div class="form">
+            <label for="newsletter1" class="visually-hidden">Email
+              address</label>
+            <input id="newsletter1" type="text" class="form-control email-holder" placeholder="Your massage" style="height: 250px";>
+          </div>
+        </form>
+
+        <button class="btn btn-danger custom-btn1 email-btn text-center " type="button">send</button>
+
+
+
+      </div >
+
+
+
+      <div class="container contact-info ">
+
+        <div class="numbers">
+
+        <div>
+         <h2> GET IN TOUCH </h2>
+          
+        </div>
+
+
+        <div>
+         <p>+00 123.456.789</p>
+         <p>+00 123.456.789</p>
+
+         </div>
+
+      
+
+        </div>
+          
+
+        <div class="adress">
+          <div>
+            <h2> WHERE WE ARE </h2>
+
+          </div>
+
+          <div>
+            <p>Awesome Address 17</p>
+            <p>New York, NYC</p>
+            <p>123-4567-890</p>
+            <p>USA</p>
+  
+
+          </div>
+
+        
+        </div>
+
+      </div>
+
+     
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container footer">
+      <img id="logo-img" src="./imge/logo.png">
+
+      <div class="social-media">
+
+        <h3>WE ARE SOCIAL</h3>
+
+        <hr>
+
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-home"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+
+        
+
+      </div>
+
+      <p class="copyright">© 2021 <span>Kasper</span > All Right Reserved</p>
+
+    </div>
+
+  </section>
+
+
+
+
+   
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+  </html>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
